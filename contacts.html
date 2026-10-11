@@ -1,1 +1,150 @@
-<title>Контакти — ЗНУ</title>
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — ЗНУ</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b53;
+        }
+
+        .contact-description {
+            text-align: center;
+            color: #52606d;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            padding: 25px;
+            background: white;
+            border: 1px solid #dce3e8;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #243b53;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #bcccdc;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid #247ba0;
+            border-color: #247ba0;
+        }
+
+        button {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 6px;
+            background: #247ba0;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #155d7a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="./image/logo.png" alt="Логотип ЗНУ" width="64" height="64">
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="news.html">Новини</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="education.html">Навчання</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Зворотний зв'язок</h1>
+
+    <p class="contact-description">
+        Маєте запитання або пропозиції?
+        Заповніть форму нижче.
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+
+        <div class="form-group">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Введіть ваше ім'я" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Тема звернення:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Оберіть тему</option>
+                <option value="education">Навчання</option>
+                <option value="technical">Технічне питання</option>
+                <option value="other">Інше</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message"
+                      placeholder="Введіть повідомлення..."
+                      required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="agreement" required>
+                Погоджуюся на обробку введених даних
+            </label>
+        </div>
+
+        <button type="submit">Надіслати повідомлення</button>
+    </form>
+</main>
+
+<footer>
+    <p>Запорізький національний університет</p>
+    <p>Студент: Полях Валерій, група 6.1252</p>
+</footer>
+
+</body>
+</html>

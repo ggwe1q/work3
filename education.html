@@ -1,1 +1,127 @@
-<title>Навчання — ЗНУ</title>
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навчання — ЗНУ</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b53;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #dce3e8;
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background: #247ba0;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f0f6f8;
+        }
+
+        tbody tr:hover {
+            background: #e1f1f7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="./image/logo.png" alt="Логотип ЗНУ" width="64" height="64">
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="news.html">Новини</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="education.html">Навчання</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Розклад навчальних занять</h1>
+    <p>Розклад занять на поточний семестр.</p>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>День</th>
+                    <th>Час</th>
+                    <th>Дисципліна</th>
+                    <th>Вид заняття</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Понеділок</td>
+                    <td>09:00–10:20</td>
+                    <td>Технології розробки вебсайтів</td>
+                    <td>Лекція</td>
+                </tr>
+                <tr>
+                    <td>Понеділок</td>
+                    <td>10:35–11:55</td>
+                    <td>Програмування</td>
+                    <td>Практичне заняття</td>
+                </tr>
+                <tr>
+                    <td>Вівторок</td>
+                    <td>09:00–10:20</td>
+                    <td>Бази даних</td>
+                    <td>Лекція</td>
+                </tr>
+                <tr>
+                    <td>Середа</td>
+                    <td>10:35–11:55</td>
+                    <td>Комп'ютерні мережі</td>
+                    <td>Практичне заняття</td>
+                </tr>
+                <tr>
+                    <td>Четвер</td>
+                    <td>09:00–10:20</td>
+                    <td>Дискретна математика</td>
+                    <td>Лекція</td>
+                </tr>
+                <tr>
+                    <td>П'ятниця</td>
+                    <td>10:35–11:55</td>
+                    <td>Технології розробки вебсайтів</td>
+                    <td>Лабораторна робота</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>Запорізький національний університет</p>
+    <p>Студент: Полях Валерій, група 6.1252</p>
+</footer>
+
+</body>
+</html>
